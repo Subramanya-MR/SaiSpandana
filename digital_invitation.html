@@ -23,7 +23,12 @@
 
     <body>
 
-
+        <!-- spinner -->
+        <div id="preloader-container">
+          <div id="preloader"></div>
+          <img src="icon1.png" alt="Image" id="image" >
+        </div>
+        <!-- spinner -->
         <!-- whatsapp-label -->
         <div id="whatsapp">
             <a href="https://wa.me/918431657134?text=Hello%20there!%20@SaiSpandanaDigitals, I have a question about your product, I would like to get more information.."                target="_blank" id="toggle1" class="wtsapp">
@@ -31,8 +36,6 @@
             </a>
         </div>
         <!-- whatsapp-label -->
-
-
         <div id="header">
             <!-- topbar -->
             <div class="topbar">
@@ -230,7 +233,13 @@
         </div>
         <!-- Copyright End -->
 
-
+    <script>
+      window.addEventListener('load', function() {
+        var preloaderContainer = document.getElementById('preloader-container');
+        // Hide the spinner when all content is loaded
+        preloaderContainer.style.display = 'none';
+      })
+    </script>
         <script src="js/lightbox-plus-jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
