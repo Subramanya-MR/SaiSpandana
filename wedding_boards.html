@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,22 +7,21 @@
     <link rel="Icon" href="icon1.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <!-- icon style sheet for header-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="css/lightbox.css">
-
   </head>
-
   <body>
-
-
+      <!-- spinner -->
+    <div id="preloader-container">
+      <div id="preloader"></div>
+      <img src="icon1.png" alt="Image" id="image" >
+    </div>
+    <!-- spinner -->
     <!-- whatsapp-label -->
     <div id="whatsapp">
       <a href="https://wa.me/918431657134?text=Hello%20there!%20@SaiSpandanaDigitals, I have a question about your product, I would like to get more information.."        target="_blank" id="toggle1" class="wtsapp">
@@ -31,8 +29,6 @@
       </a>
     </div>
     <!-- whatsapp-label -->
-
-
     <div id="header">
       <!-- topbar -->
       <div class="topbar">
@@ -53,9 +49,7 @@
         </div>
       </div>
       <!-- topbar -->
-
       <!-- Navbar -->
-
       <div class="container-fluid">
         <nav>
          <a href="index.html"> <img src="logosaispandana.png" alt="ಸಾಯಿಸ್ಪಂದನಾ" class="logo"></a>
@@ -68,9 +62,7 @@
         </nav>
       </div>
     </div>
-
     <!-- Navbar -->
-
     <!-- hOUSE-NAME-PLATES -->
     <div class="container1">
       <div id="wrapper">
@@ -103,10 +95,7 @@
           </div>
       </div>  
     </div>
-  
     <!-- hOUSE-NAME-PLATES -->
-  
-
     <!-- footer -->
     <div class="container-fluid footer py-5 wow fadeIn " data-wow-delay="0.2s">
       <div class="container py-5">
@@ -158,7 +147,6 @@
       </div>
     </div>
     <!-- footer -->
-
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4 rounded-bottom">
       <div class="container">
@@ -175,15 +163,18 @@
       </div>
     </div>
     <!-- Copyright End -->
-
-
+    <script>
+      window.addEventListener('load', function() {
+        var preloaderContainer = document.getElementById('preloader-container');
+        // Hide the spinner when all content is loaded
+        preloaderContainer.style.display = 'none';
+      })
+    </script>
     <script src="js/main.js"> </script>
     <script src="js/lightbox-plus-jquery.js"></script>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
   </body>
-
 </html>
 <!-- SUBRAMANYA -->
